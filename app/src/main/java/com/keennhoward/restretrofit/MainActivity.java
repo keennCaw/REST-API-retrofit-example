@@ -41,6 +41,10 @@ public class MainActivity extends AppCompatActivity {
         deletePost();
     }
 
+    //onResponse means there is a response in the server Whether an error or correct message
+    //use if(response.isSuccessful()){} to differentiate between the correct and error response
+    //onFailure means there is a problem with the connection
+
     public void getUserWithId(int id){
         Call<UserData> call = reqresApi.getUserData(id);
         call.enqueue(new Callback<UserData>() {

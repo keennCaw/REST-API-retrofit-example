@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
 
     //onResponse means there is a response in the server Whether an error or correct message
     //use if(response.isSuccessful()){} to differentiate between the correct and error response
+    //use response.code to get error code
     //onFailure means there is a problem with the connection
 
     public void getUserWithId(int id){
